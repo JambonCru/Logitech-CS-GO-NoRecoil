@@ -14,7 +14,7 @@ Sensitivity: 3.09
 Raw Input: ON
 Mouse Acceleration: OFF
 
-Weapon Supported: AK47/M4A4/MP9/MAC10
+Weapon Supported: AK47/MP9/M4A4/MAC10
 
 GLHF :D
 --]]
