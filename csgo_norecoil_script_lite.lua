@@ -46,14 +46,14 @@ local function RetrieveWeaponName(weapon,act)
       if weapon == 1 then
          return"AK47"
       elseif weapon == 2 then
-         return"MP9"
+         return"MAC10"
       end
       return"T: ON"
    elseif act == 2 then
       if weapon == 1 then
          return"M4A4"
       elseif weapon == 2 then
-         return"MAC10"
+         return"MP9"
       end
       return"CT: ON"
    end
@@ -98,18 +98,18 @@ function OnEvent(event, arg)
       end
    elseif Recoil_Activator == 2 then
       if (R_Weapon_Selector == 1) and IsMouseButtonPressed(1) then
-         for i = 1, #MP9_Pattern do
-            if IsMouseButtonPressed(1) then
-               Sleep(Spray_Randomize)
-               MoveMouseRelative( MP9_Pattern[i].x, MP9_Pattern[i].y )
-            end
-         end
-      end
-      if (R_Weapon_Selector == 2) and IsMouseButtonPressed(1) then
          for i = 1, #MAC10_Pattern do
             if IsMouseButtonPressed(1) then
                Sleep(Spray_Randomize)
                MoveMouseRelative( MAC10_Pattern[i].x, MAC10_Pattern[i].y )
+            end
+         end
+      end
+      if (R_Weapon_Selector == 2) and IsMouseButtonPressed(1) then
+         for i = 1, #MP9_Pattern do
+            if IsMouseButtonPressed(1) then
+               Sleep(Spray_Randomize)
+               MoveMouseRelative( MP9_Pattern[i].x, MP9_Pattern[i].y )
             end
          end
       end
